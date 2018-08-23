@@ -3,33 +3,36 @@
   <head>
     <title>Págia Profissioal de Marcio J. Rios</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="estilos.css">
   </head>
   <body>
     <!-- area superior -->
+    <header>
     <h1 id="inicio">Marcio J. Rios</h1>
     <p>Desenvoldedor Web<p>
+    </header>
     <hr>
     <img src="Imagens/profissional.jpg" width = "400" alt="Profissional de TI">
     <!-- Menu -->
-    <ul>
+    <ul class="Menu">
       <li><a href="pagina.html">Página inicial</a></li>
       <li><a href="curriculum.html">Curriculum</a></li>
       <li><a href="portifolio.html">Portifólio</a></li>
       <li><a href="temas.html">Temas de interesse</a></li>
       <li><a href="localizacao.html">Localização</a></li>
-      <li><a href="contato.html">Contato</a></li>
+      <li><a href="#contato">Contato</a></li>
     </ul>
     <h2 id="curriculum">Curriculum</h2>
 
     <h3 id="formacao">Formação Academica</h3>
 <!--Lista ordenada-->
     <ol>
-      <li>Graduação em <strong>Ciência da Computação</strong> na <a href="http://www.uffs.edu.br">UFFS</a></li>
+      <li>Graduação em <strong style="color: green">Ciência da Computação</strong> na <a href="http://www.uffs.edu.br">UFFS</a></li>
     </ol>
 
     <h3 id="experiencia">Experiência Profissional</h3>
 <!--Lista sem ordem-->
-    <ul>
+    <ul class="EP">
       <li>LOL: 4 anos</li>
       <li>Mount & Blade Warband : 600 horas</li>
     </ul>
@@ -43,7 +46,7 @@
       <dd>Sobrevivência</dd>
     </dl>
 
-    <h2>Contato</h2>
+    <h2 id="contato">Contato</h2>
 
     <form action="" method="get"><!--Criação de formulário-->
     <div><!--Serve para organizar os elementos dentro do bloco quebrando linhas-->
@@ -54,7 +57,7 @@
     </div>
 
     <div>
-      <label for="e-mail">Email:<input type="email" name="email" id="email">
+      <label for="email">Email:<input type="email" name="email" id="email"></label>
     </div>
 <!--Opções selecionaveis-->
     <fieldset>
@@ -96,6 +99,10 @@
 
     </form>
     <br><br>
-    <a href="#inicio">Inicio da Página</a>
+
+    <footer>
+      <a href="#inicio">Inicio da Página</a>
+    </footer>
+
   </body>
 </html>

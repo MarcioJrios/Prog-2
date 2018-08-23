@@ -1,0 +1,27 @@
+h1{
+  color: indigo;
+}
+a{
+  text-decoration: none;
+}
+a:link{
+  color:green;
+}
+a:hover{
+  color:blue;
+}
+a:visited{
+  color:indigo;
+}
+ ul.Menu li{
+  display: inline;
+  margin: 20px;
+  border-style: solid;
+  padding: 4px;
+  border-color: black;
+}
+header{
+  /* background-color: #005B00; */
+  color: white;
+  background-image: image();
+}
