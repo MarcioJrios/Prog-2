@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Págia Profissioal de Marcio J. Rios</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <!-- area superior -->
+    <header>
+    <h1 id="inicio">Marcio J. Rios</h1>
+    <p>Desenvoldedor Web<p>
+    </header>
+    <hr>
+    <img src="Imagens/profissional.jpg" width = "400" alt="Profissional de TI">
+    <!-- Menu -->
+    <ul class="Menu">
+      <li><a href="pagina.html">Página inicial</a></li>
+      <li><a href="curriculum.html">Curriculum</a></li>
+      <li><a href="portifolio.html">Portifólio</a></li>
+      <li><a href="temas.html">Temas de interesse</a></li>
+      <li><a href="localizacao.html">Localização</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <h2 id="curriculum">Curriculum</h2>
+
+    <h3 id="formacao">Formação Academica</h3>
+<!--Lista ordenada-->
+    <ol>
+      <li>Graduação em <strong style="color: green">Ciência da Computação</strong> na <a href="http://www.uffs.edu.br">UFFS</a></li>
+    </ol>
+
+    <h3 id="experiencia">Experiência Profissional</h3>
+<!--Lista sem ordem-->
+    <ul class="EP">
+      <li>LOL: 4 anos</li>
+      <li>Mount & Blade Warband : 600 horas</li>
+    </ul>
+
+    <h3 id="habilidades">Conhecimentos e habilidades</h3>
+<!--Lista de elementos com descrição-->
+    <dl>
+      <dt>Dark Souls</dt>
+      <dd>Paciência e auto-controle</dd>
+      <dt>Conan exiles e Ark</dt>
+      <dd>Sobrevivência</dd>
+    </dl>
+
+    <h2 id="contato">Contato</h2>
+
+    <form action="" method="get"><!--Criação de formulário-->
+    <div><!--Serve para organizar os elementos dentro do bloco quebrando linhas-->
+      <label for="nome"  class="alinhado">
+        Nome:</label><input type="text" name="nome" id="nome">
+    </div>
+
+    <div>
+      <label for="email"  class="alinhado">
+        Email:<input type="email" name="email" id="email"></label>
+    </div>
+<!--Opções selecionaveis-->
+    <fieldset>
+      <legend>Perfil:</legend>
+        <label><input type="radio" name="perfil" value="estudante">Estudante</label><br>
+        <label><input type="radio" name="perfil" value="profissional">Profissioal de TI</label><br>
+        <label><input type="radio" name="perfil" value="outros" checked>Outros</label><br>
+    </fieldset>
+
+    <div>
+      <label>Assunto:
+        <select name="assunto" class="alinhado">
+          <option value="0">Selecione</option>
+          <option value="1">Dúvidas</option>
+          <option value="2">Orçamentos</option>
+          <option value="3">Críticas</option>
+          <option value="4">Sugestões</option>
+        </select>
+      </label>
+    </div>
+
+    <div>
+      <p>Horário(s) preferencial(is) para contato telefônico:</p>
+      <label><input type="checkbox" name="horario[]" value="manha" checked>Manhã</label>
+      <label><input type="checkbox" name="horario[]" value="tarde">Tarde</label>
+      <label><input type="checkbox" name="horario[]" value="noite">Noite</label>
+    </div>
+
+    <div><!--caixa de mensagem/texto-->
+      <label>Mensagem:<br>
+        <textarea name="msg"></textarea>
+        </label>
+      </div>
+
+      <div><!-- botoes-->
+        <input type="submit" value="Enviar">
+        <input type="reset" name="reset" value="Limpar campos">
+      </div>
+
+    </form>
+    <br><br>
+
+    <footer>
+      <a href="#inicio">Inicio da Página</a>
+    </footer>
+
+  </body>
+</html>

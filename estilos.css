@@ -25,3 +25,9 @@ header{
   color: white;
   background-image: image();
 }
+
+.alinhado{
+  width: 70px;
+  display: inline-block;
+
+}
