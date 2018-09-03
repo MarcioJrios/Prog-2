@@ -1,0 +1,81 @@
+*{
+  margin: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link{
+	color: green;
+}
+
+a:visited{
+	color: orange;
+}
+
+a:active{
+	color:lightblue;
+}
+
+a:hover{
+	background-color: yellow;
+}
+
+header{
+	background-color: #00FFFF;
+	padding: 5px;
+  clear: left;
+}
+nav{
+	background-color: #FFFACD;
+	padding: 5px;
+}
+footer{
+	background-color: #0000FF;
+	padding: 5px;
+	clear: left;
+}
+main{
+	margin: 10px;
+}
+
+ul.categorias{
+  display: block;
+  clear: right;
+  padding-right: 6px;
+}
+.menu-opcoes ul li{
+ display: inline;
+ margin: 15px;
+ border-style: solid;
+ padding: 4px;
+ border-color: black;
+
+}
+
+.menu-categorias{
+  float: left;
+  width: auto;
+}
+
+.carrinho{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+ul.social li{
+  display: inline;
+  padding: 5px;
+}
+
+.col-2{
+  background-color: red;
+  width: 30;
+  padding-left: 7px;
+}
+
+.col-3{
+  background-color: green;
+}
