@@ -11,18 +11,19 @@
 	<!-- cabeçalho -->
 	<header>
 		<h1>Rent a Tool</h1>
+		<div class="LogCar">
 		<?php
 		session_start();
 		if(isset($_SESSION['nome']))
 			$var = $_SESSION['nome'];
+			echo "Olá $var";
 			else {
-				$var
+				echo "<a href="login.php">login</a>";
 			}
-		<div class="LogCar">
-			<a href="login.php"
+		?>
 			<p class="carrinho"><a href="#">Meu carrinho <img src="img/cart.png" width="32"></a></p>
 		</div>
-		 ?>
+		 
 		<div class="LogCar">
 			<a href="login.php"
 			<p class="carrinho"><a href="#">Meu carrinho <img src="img/cart.png" width="32"></a></p>
