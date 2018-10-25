@@ -12,12 +12,12 @@ include "includes/cabecalho.php";
 
       <div>
           <form action="verificaLogin.php" method="post" id="form-contato">
-                <label for="login" class="label-alinhado">Login:</label>
+                <label for="loginLog" class="label-alinhado">Login:</label>
                 <input type="text" id="loginLog" name="login" placeholder="Mínimo 6 caracteres">
                 <span class="msg-erro" id="msg-login"></span>
                 </div>
               <div class="form-item">
-                <label for="senha" class="label-alinhado">Senha:</label>
+                <label for="senhaLog" class="label-alinhado">Senha:</label>
                 <input type="password" id="senhaLog" name="senha" placeholder="Mínimo 6 caracteres">
                 <span class="msg-erro" id="msg-senha"></span>
               </div>

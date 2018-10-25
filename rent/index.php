@@ -36,16 +36,13 @@ include "includes/cabecalho.php";
 					$sql.=" where nome like '%{$_GET['busca']}%'";
 				else
 					$sql.= " order by id desc limit 10"; // novidades
-
 				//echo $sql;
-
 				$resultado = mysqli_query($conexao, $sql);
 				if(mysqli_num_rows($resultado) == 0){
 					echo "<p>Nenhum produto encontrado</p>";
 				}
 				else{
 					while ($produto = mysqli_fetch_array($resultado)){
-
 					?>
 				    <div class="produto">
 					  <a href="produto.php?id=<?=$produto['id'];?>">
