@@ -11,14 +11,15 @@
 	<!-- cabeçalho -->
 	<header>
 		<h1>Rent a Tool</h1>
-		<div class="LogCar">
+		<div class="carrinho">
 		<?php
 		session_start();
-		if(isset($_SESSION['nome']))
+		if(isset($_SESSION["login"]) && isset($_SESSION["nome"])){
 			$var = $_SESSION['nome'];
-			echo "Olá $var";
-			else {
-				echo "<a href="login.php">login</a>";
+			echo "Olá $var, ";
+            echo "<a href='sair.php'>Sair </a>";
+			}else {
+				echo "<a href='login.php'>login</a>";
 			}
 		?>
 			<p class="carrinho"><a href="#">Meu carrinho <img src="img/cart.png" width="32"></a></p>
@@ -39,4 +40,4 @@
 			</ul>
 		</nav>
 	</header>
-	<!-- fim cabeçalho -->
+<!-- fim cabeçalho -->
