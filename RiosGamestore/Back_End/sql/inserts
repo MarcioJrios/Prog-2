@@ -1,0 +1,12 @@
+INSERT INTO categoria(sigla, descricao) values('AEV', 'Ação/Aventura'), ('ESP', 'Esportes'), ('RPG', 'Rpg'), ('ARC', 'Arcade'), ('SHT', 'Shooter'), ('EST', 'Estratégia');
+
+INSERT INTO produto(nome, datalan, quantidade, preco, imagem, promocao, plataforma) VALUES
+('Destiny 2: renegados', '2018/08/12', 15, 119, 'destiny2.jpg', 100, 0),
+('FIFA 19', '2018/08/22', 9, 199, 'fifa.jpg', NULL, 0),
+('Far Cry 5', '2018/05/16', 13, 179, 'farcry.jpeg', 155, 1),
+("Assassins's creed: odyssey", '2018/06/28', 4, 189, 'odyssey.jpeg', 149, 0),
+('Valkyria Chronycles 4', '2018/04/05', 11, 210, 'valkyria.jpeg', NULL, 1),
+('Hollow Knight', '2017/04/14', 7, 49, 'hollow.jpeg', 42, 0),
+('NBA 19', '2018/08/25', 17, 190, 'nba.jpeg', 179, 1);
+
+INSERT INTO cat_prod(codp, sigla) VALUES(1, 'AEV'), (1, 'RPG'), (1, 'SHT'), (2, 'ESP'), (3, 'SHT'), (4, 'AEV'), (4, 'RPG'), (5, 'EST'), (6, 'ARC'), (7, 'ESP');

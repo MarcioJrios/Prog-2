@@ -1,0 +1,54 @@
+DROP DATABASE IF EXISTS riosGamestore;
+
+CREATE DATABASE riosGamestore DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+USE riosGamestore;
+
+DROP USER IF EXISTS 'admrios'@'localhost';
+
+CREATE USER 'admrios'@'localhost' IDENTIFIED BY '12345'; 
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON riosGamestore.* TO 'admrios'@'localhost';
+
+CREATE TABLE cliente (
+  email VARCHAR(50) PRIMARY KEY,  
+  nomec VARCHAR(45) NOT NULL,
+  endereco VARCHAR(45),
+  numcartao INTEGER,
+  login VARCHAR(50) NOT NULL,
+  senha VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE produto (
+  codp INTEGER AUTO_INCREMENT PRIMARY KEY,  
+  nome VARCHAR(45) NOT NULL, 
+  imagem VARCHAR(50),
+  quantidade INTEGER,
+  datalan DATE,
+  preco REAL,
+  promocao REAL DEFAULT 0,
+  plataforma BOOLEAN NOT NULL
+);
+
+
+CREATE TABLE compra (
+  email VARCHAR(50),  
+  codp INTEGER,
+  metodoPag BOOLEAN NOT NULL,
+  parcelas INT NOT NULL,
+  datac DATE,
+  FOREIGN KEY (email) REFERENCES cliente(email),
+  FOREIGN KEY (codp) REFERENCES produto(codp)
+);
+
+CREATE TABLE categoria (
+  sigla VARCHAR(3) PRIMARY KEY,
+  descricao VARCHAR(50) NOT NULL
+);
+CREATE TABLE cat_prod (
+  codp INTEGER,
+  sigla VARCHAR(50),
+  PRIMARY KEY(codp, sigla),
+  FOREIGN KEY (codp) REFERENCES produto(codp),
+  FOREIGN KEY (sigla) REFERENCES categoria(sigla)
+);
